@@ -2,34 +2,30 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
-scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f5f7fa;
-color:#222;
-line-height:1.6;
+background:#f5f7fb;
+color:#333;
 }
 
 header{
-background:linear-gradient(135deg,#004aad,#0099ff);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:#0b4f9c;
 color:#fff;
-padding:20px;
-text-align:center;
 position:sticky;
 top:0;
-z-index:999;
-box-shadow:0 3px 10px rgba(0,0,0,.2);
 }
 
-header h1{
-font-size:2.2rem;
-}
-
-header p{
-font-size:1rem;
-opacity:.9;
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:20px;
+font-weight:600;
 }
 
 .hero{
@@ -38,31 +34,32 @@ display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
 background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
 url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee") center/cover;
 color:#fff;
+padding:20px;
 }
 
-.hero h2{
-font-size:3rem;
+.hero-content h1{
+font-size:55px;
 margin-bottom:15px;
 }
 
-.hero p{
-font-size:1.2rem;
+.hero-content p{
+font-size:22px;
+margin-bottom:25px;
 }
 
 .btn{
 display:inline-block;
-padding:14px 35px;
+padding:14px 30px;
 background:#ff9800;
 color:#fff;
 text-decoration:none;
-border-radius:50px;
+border-radius:30px;
+margin:8px;
 font-weight:bold;
 transition:.3s;
-margin-top:20px;
 }
 
 .btn:hover{
@@ -70,56 +67,22 @@ background:#ff6d00;
 transform:scale(1.05);
 }
 
-.section{
-padding:70px 8%;
-text-align:center;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-margin-top:35px;
-}
-
-.card{
-background:#fff;
-padding:25px;
-border-radius:15px;
-box-shadow:0 10px 20px rgba(0,0,0,.1);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-footer{
-background:#004aad;
-color:#fff;
-text-align:center;
-padding:30px;
-margin-top:40px;
-}
-
-.phone{
-font-size:1.8rem;
-font-weight:bold;
-color:#ff9800;
-}
-
 @media(max-width:768px){
 
-.hero h2{
-font-size:2rem;
+header{
+flex-direction:column;
 }
 
-.hero{
-height:70vh;
+nav{
+margin-top:10px;
 }
 
-header h1{
-font-size:1.7rem;
+.hero-content h1{
+font-size:34px;
+}
+
+.hero-content p{
+font-size:18px;
 }
 
 }
